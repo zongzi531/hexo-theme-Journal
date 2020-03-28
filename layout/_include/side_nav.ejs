@@ -17,9 +17,11 @@
 
         <% if(site.pages){ %>
         <% site.pages.each(function (page){ %>
-        <a class="a-block nav-link-item <%= is_current(page.path) && 'active' %>" href="<%= config.root + page.path %>">
-            <%= page.title %>
-        </a>
+            <% if(page.no_visibility === void 0 || page.no_visibility === false){ %>
+                <a class="a-block nav-link-item <%= is_current(page.path) && 'active' %>" href="<%= config.root + page.path %>">
+                    <%= page.title %>
+                </a>
+            <% } %>
         <% });} %>
 
         <% if (theme.rss) { %>
