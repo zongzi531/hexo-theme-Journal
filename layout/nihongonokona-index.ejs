@@ -39,7 +39,7 @@ function getFeaturedImage() {
             </div>
         </div>
         <% } %>
-        <% site.pages.filter(function (item) { return !!item.commuting }).each(function (item) { %>
+        <% site.pages.filter(function (item) { return !!item.nihongonokona }).each(function (item) { %>
         <a href="<%= config.root + item.path %>" class="a-block">
             <div class="post-item-wrapper">
                 <div class="post-item post-item-no-divider">
@@ -52,6 +52,9 @@ function getFeaturedImage() {
                                 length: config.truncate_len ? config.truncate_len : theme.truncate_len ? theme.truncate_len : 140,
                                 omission: '...'
                             }) %>
+                        </div>
+                        <div class="post-item-meta">
+                            <%= date(item.date, "YYYY-MM-DD") %>
                         </div>
                     </div>
                     <% if(item.featured_image){ %>
