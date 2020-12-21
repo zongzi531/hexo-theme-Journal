@@ -57,6 +57,10 @@ function getFeaturedImage() {
                     <%- page.content %>
                 </div>
             </div>
+
+            <% if(theme.post_copyright.enable){ %>
+            <% include _include/post_copyright.ejs %>
+            <% } %>
     
             <% include _include/post_pagination.ejs %>
     
