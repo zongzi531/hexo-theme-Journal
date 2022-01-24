@@ -11,6 +11,9 @@ archives: false
 livere: # [data-uid] for livere.com
 disqus: zongzi # [short_name] for disqus.com
 
+copyright_start: 2017
+copyright_end: 2022
+
 # Declare license on posts
 post_copyright:
   enable: true
