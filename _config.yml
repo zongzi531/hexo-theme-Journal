@@ -6,10 +6,7 @@ truncate_len: 60
 rss: # atom.xml
 archives: false
 
-# Choose the comment service according to your need.
-# Please do not use the two services at the same time.
-livere: # [data-uid] for livere.com
-disqus: zongzi # [short_name] for disqus.com
+giscus: true
 
 copyright_start: 2017
 copyright_end: 2022

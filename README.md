@@ -120,15 +120,6 @@ rss: atom
 
 > The plugin `hexo-generator-feed` is usually required for this function.
 
-#### Commenting
-
-The theme *Journal.* natively supports two commenting services – [Livere](https://www.livere.com/) and [Disqus](https://disqus.com/). To enable commenting, you just need to add **one of** the following lines to the *_config.yml* **in theme _Journal._'s directory**.
-
-```yaml
-livere: [data-uid] on livere.com
-disqus: [short_name] on disqus.com
-```
-
 > If two fields are **both left non-empty**, two comment boxes will appear. To fix this, just leave one of the two fields empty.
 
 #### Disabling commenting
