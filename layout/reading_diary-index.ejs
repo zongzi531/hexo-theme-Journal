@@ -39,7 +39,7 @@ function getFeaturedImage() {
             </div>
         </div>
         <% } %>
-        <% site.pages.filter(function (item) { return !!item.commuting }).sort('date', 'asc').each(function (item) { %>
+        <% site.pages.filter(function (item) { return !!item.reading_diary }).sort('date', 'asc').each(function (item) { %>
         <a href="<%= config.root + item.path %>" class="a-block">
             <div class="post-item-wrapper">
                 <div class="post-item post-item-no-divider">
