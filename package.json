@@ -4,9 +4,7 @@
     "description": "Moments got piled up.",
     "main": "index.js",
     "scripts": {
-        "test": "npm run build",
-        "build": "node-sass source/scss/journal.scss -o source/css --output-style compressed && postcss source/css/journal.css -u autoprefixer -r",
-        "watch": "node-sass -w source/scss -o source/css"
+        "build": "sass source/scss/journal.scss:source/css/journal.css"
     },
     "repository": {
         "type": "git",
@@ -25,10 +23,6 @@
     "homepage": "https://github.com/SumiMakito/hexo-theme-journal/README.md",
     "devDependencies": {},
     "dependencies": {
-        "autoprefixer": "^9.2.0",
-        "node-sass": "^9.0.0",
-        "postcss": "^7.0.5",
-        "postcss-cli": "^6.0.0",
-        "scss-compile": "^0.1.7"
+        "sass": "^1.86.3"
     }
 }

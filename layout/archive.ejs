@@ -18,8 +18,8 @@ config.__title = __('Archive') +
             var itemTag = is_month() ? date(item.date, 'YYYY/MM') : is_year() ? date(item.date, 'YYYY/MM') : date(item.date, 'YYYY');
         %>
         <% if(groupTag !== itemTag){ %>
-        <div class="post-item-wrapper post-item-wrapper-no-hover">
-            <div class="post-item post-item-no-gaps" style="padding: 8px 0;">
+        <div class="post-item-wrapper post-item-wrapper-no-hover archive-item-wrapper">
+            <div class="post-item post-item-no-gaps">
                 <div class="post-item-info-wrapper">
                     <div class="post-item-title post-item-title-small">
                         <% if(is_month()) { %>
@@ -34,11 +34,12 @@ config.__title = __('Archive') +
         <% } %>
 
         <a href="<%= config.root + item.path %>" class="a-block">
-            <div class="post-item-wrapper" style="margin: 0 28px 0 35px;">
+            <div class="post-item-wrapper archive-item">
                 <div class="post-item-info-wrapper">
                     <span class="post-item-meta">
                         <%= date(item.date, "YYYY-MM-DD") %>
                     </span>
+                    <span>: </span>
                     <span class="post-item-title-small">
                         <%= item.title %>
                     </span>
